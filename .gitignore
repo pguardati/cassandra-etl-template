@@ -1,0 +1,8 @@
+*.xml
+*.iml
+.ipynb_checkpoints
+pycache/
+
+/event_data
+/event_data_processed
+/.idea/
