@@ -2,8 +2,8 @@ import unittest
 import shutil
 from cassandra.cluster import Cluster
 
-from sparkify_cassandra_db.constants import DIR_DATA_TEST, DIR_DATA_PROCESSED_TEST
-from sparkify_cassandra_db.src import etl, utils_processing, create_tables, check_database
+from cassandra_etl_template.constants import DIR_DATA_TEST, DIR_DATA_PROCESSED_TEST
+from cassandra_etl_template.src import etl, utils_processing, create_tables, check_database
 
 
 class TestETL(unittest.TestCase):

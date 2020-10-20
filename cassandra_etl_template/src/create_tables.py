@@ -1,6 +1,6 @@
 from cassandra.cluster import Cluster
 
-from sparkify_cassandra_db.src import sql_queries
+from cassandra_etl_template.src import sql_queries
 
 
 def reset_database():

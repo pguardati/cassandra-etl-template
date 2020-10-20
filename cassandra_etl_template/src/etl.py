@@ -2,8 +2,8 @@ import argparse
 import sys
 from cassandra.cluster import Cluster
 
-from sparkify_cassandra_db.src import utils_processing, create_tables
-from sparkify_cassandra_db.src import check_database
+from cassandra_etl_template.src import utils_processing, create_tables
+from cassandra_etl_template.src import check_database
 
 
 def parse_input(args):

@@ -1,7 +1,7 @@
 import unittest
 from cassandra.cluster import Cluster
 
-from sparkify_cassandra_db.src import create_tables, sql_queries
+from cassandra_etl_template.src import create_tables, sql_queries
 
 
 class TestQueries(unittest.TestCase):

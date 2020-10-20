@@ -30,51 +30,45 @@ export PYTHONPATH
 ```
 e.g.
 ```
-PYTHONPATH=~/PycharmProjects/SparkifyCassandraDB:$PYTHONPATH 
+PYTHONPATH=~/PycharmProjects/cassandra-etl-template:$PYTHONPATH 
 export PYTHONPATH
 ```
 
 To install and activate the environment:
 ```
-conda env create -f environment.yml
-conda activate sparkify_cassandra_db 
+conda env create -f cassandra_etl_template/environment.yml
+conda activate cassandra_etl_template 
 ```
 
 
 ## Usage
 To drop the current tables and create new empty ones:
 ```
-python sparkify_cassandra_db/src/create_tables.py
+python cassandra_etl_template/src/create_tables.py
 ```
 
 To run the etl pipeline on the test data:
 ```
-python sparkify_cassandra_db/src/etl.py sparkify_cassandra_db/tests/test_data/  sparkify_cassandra_db/tests/test_data_processed --reset-table
+python cassandra_etl_template/src/etl.py cassandra_etl_template/tests/test_data/  cassandra_etl_template/tests/test_data_processed --reset-table
 ```
 
 To run the etl pipeline on the full data,  
 Download the data from Udacity and run:
 ```
-python sparkify_cassandra_db/src/etl.py path/to/raw/data path/to/processed/data --reset-table
+python cassandra_etl_template/src/etl.py path/to/raw/data path/to/processed/data --reset-table
 ```
 e.g:
 ```
-python sparkify_cassandra_db/src/etl.py event_data event_data_processed --reset-table
-```
-Else a jupyter notebook is available to run the etl pipeline and the queries:
-```
-jupyter lab 
-notebooks/example.py
+python cassandra_etl_template/src/etl.py event_data event_data_processed --reset-table
 ```
 
 To check the content of the database, run:
 ```
-python sparkify_cassandra_db/src/check_database.py
+python cassandra_etl_template/src/check_database.py
 ```
 
 ## Tests
 To run all unittests:
 ```
-python -m unittest discover sparkify_cassandra_db/tests
+python -m unittest discover cassandra_etl_template/tests
 ```
-

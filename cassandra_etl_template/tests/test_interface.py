@@ -1,6 +1,6 @@
 import unittest
 
-from sparkify_cassandra_db.src.etl import parse_input
+from cassandra_etl_template.src.etl import parse_input
 
 
 class TestInterface(unittest.TestCase):

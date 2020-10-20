@@ -1,7 +1,7 @@
 import os
 
 # General
-PROJECT_NAME = 'sparkify_cassandra_db'
+PROJECT_NAME = 'cassandra_etl_template'
 REPOSITORY_PATH = os.path.realpath(__file__)[:os.path.realpath(__file__).find(PROJECT_NAME)]
 PROJECT_PATH = os.path.join(REPOSITORY_PATH, PROJECT_NAME)
 
