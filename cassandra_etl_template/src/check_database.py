@@ -27,5 +27,9 @@ def fetch_content():
     cluster.shutdown()
 
 
-if __name__ == "__main__":
+def main():
     fetch_content()
+
+
+if __name__ == "__main__":
+    main()
